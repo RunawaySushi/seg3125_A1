@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: "Poppins", "Inter", sans-serif;
+  opacity: 0.85;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.15);
+}
