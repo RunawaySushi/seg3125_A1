@@ -5,7 +5,6 @@ export default function Menu({ menuItems = [] }) {
   const [isOpen, setIsOpen] = useState(false);
   const wrapperRef = useRef(null);
 
-  /*closes when clicking out of the menu*/
   useEffect(() => {
     function handleClickOutside(e) {
       if (wrapperRef.current && !wrapperRef.current.contains(e.target)) {
