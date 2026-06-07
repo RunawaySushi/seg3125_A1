@@ -15,18 +15,23 @@ export default function Menu({ menuItems = [] }) {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  function handleItemClick(item) {
+    if (item.url) {
+      window.open(item.url, '_blank');
+    }
+    setIsOpen(false);
+  }
+
   return (
     <div className="dropdown-wrapper" ref={wrapperRef}>
 
       <button
-        className="hamburger-btn"
+        className="projects-btn"
         onClick={() => setIsOpen(prev => !prev)}
         aria-expanded={isOpen}
         aria-label="Open menu"
       >
-        <span className="line" />
-        <span className="line" />
-        <span className="line" />
+        Projects
       </button>
 
       {isOpen && (
@@ -36,7 +41,7 @@ export default function Menu({ menuItems = [] }) {
               key={i}
               className="dropdown-item"
               role="menuitem"
-              onClick={() => setIsOpen(false)}
+              onClick={() => handleItemClick(item)}
             >
               {item.label}
             </button>

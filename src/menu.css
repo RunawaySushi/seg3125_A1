@@ -1,13 +1,20 @@
 .dropdown-wrapper {
   position: relative;
 }
-.hamburger-btn {
+.projects-btn {
   background: transparent;
   border: 1.5px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
 
-  width: 42px;
-  height: 38px;
+
+
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: "Poppins", "Inter", sans-serif;
+  opacity: 0.85;
 
   cursor: pointer;
 
@@ -20,19 +27,9 @@
   transition: all 0.25s ease;
 }
 
-.hamburger-btn:hover {
+.projects-btn:hover {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.8);
-}
-
-
-.line {
-  width: 18px;
-  height: 2px;
-  background: white;
-  border-radius: 10px;
-
-  transition: all 0.3s ease;
 }
 
 
