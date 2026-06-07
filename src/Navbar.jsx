@@ -2,7 +2,7 @@ import Menu from './menu';
 import './Navbar.css';
 
 const MENU_ITEMS = [
-  { label: 'Service Site', url: 'raymondtan-servicesite.netlify.app}'},
+  { label: 'Service Site', url: 'https://raymondtan-servicesite.netlify.app'},
   { label: 'Coming soon 2' },
   { label: 'Coming soon 3' },
   { label: 'Coming soon 4' },
